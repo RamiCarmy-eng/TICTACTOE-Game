@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FirstGame.iml" filepath="$PROJECT_DIR$/FirstGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inverse/Inverse.iml" filepath="$PROJECT_DIR$/Inverse/Inverse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/course_OOP/course_OOP.iml" filepath="$PROJECT_DIR$/course_OOP/course_OOP.iml" />
+    </modules>
+  </component>
+</project>
