@@ -37,7 +37,8 @@ public class Board {
 		//check rows for player 1
 		int n = 0;
 		while (!endLoop) {
-			int sum1=0,sum2=0;
+			int sum1=0;
+			int sum2=0;
 			for (int m = 0; m < SIZE; m++) {
 				if (board[n][m] == Mark.X) {
 					sum1++;
@@ -72,13 +73,15 @@ public class Board {
 
 		}
 
-		//chek for cols
-		boolean winCOL = false,endLoopCol=false;
+		//check for cols
+		boolean winCOL = false;
+		boolean endLoopCol=false;
 		int m=0;
 
 		while (!endLoopCol) {
 
-			int sum1=0,sum2=0;
+			int sum1=0;
+			int sum2=0;
 			for (  n = 0; n < SIZE; n++) {
 				if (board[n][m] == Mark.X) {
 					sum1++;
@@ -102,17 +105,18 @@ public class Board {
 			}
 			m++;
 
-			if (m == this.SIZE) {
+			if (m ==SIZE) {
 				winCOL = false;
 				endLoopCol = true;
 			}
 
 		}
 
-		//chek for diagonal
+		//check for diagonal
 		boolean windiagonal = false;
-		int sum1=0,sum2=0;
-		for (int  i = 0; i < this.SIZE; i++) {
+		int sum1=0;
+		int sum2=0;
+		for (int  i = 0; i < SIZE; i++) {
 			if (board[i][i] == Mark.X) {
 				sum1++;
 				//System.out.println("i "+i+"sum1= "+sum1);
@@ -134,13 +138,13 @@ public class Board {
 		}
 
 
-		//chek for diagonal2
+		//check for diagonal2
 		boolean windiagonal1 = false;
 		sum1=0;
 		sum2=0;
 
-		for (int i = this.SIZE-1; i >= 0; i--) {
-			if (board[this.SIZE-1-i][i] == Mark.X) {
+		for (int i = SIZE-1; i >= 0; i--) {
+			if (board[SIZE-1-i][i] == Mark.X) {
 				sum1++;
 
 				if (sum1 == 4) {
@@ -165,5 +169,5 @@ public class Board {
 		return (winCOL || winRow || windiagonal || windiagonal1 );
 
 	}
-
+	
 }

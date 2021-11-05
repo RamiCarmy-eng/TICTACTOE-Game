@@ -1,12 +1,12 @@
-import java.awt.*;
-import java.util.Scanner;
+
+
 public class Game {
 
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+		/*  Scanner scanner = new Scanner(System.in);*/
 		Renderer renderer = new Renderer();
-		InputNumber inp = new InputNumber();
+		/* InputNumber inp = new InputNumber(); */
 		Board board= new Board();
 		boolean gameEnded = false;
 		renderer.renderBoard(board);
@@ -26,12 +26,12 @@ public class Game {
 				if(player==1) {
 					if(!player1.playTurn()){
 						gameEnded=true;
-					};
+					}
 				}
 				if(player==2) {
 					if(!player2.playTurn()){
 						gameEnded=true;
-					};
+					}
 				}
 			}
 

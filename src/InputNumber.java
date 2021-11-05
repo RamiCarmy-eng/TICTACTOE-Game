@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class InputNumber {
-    public static int choice;
+    public static  int choice;
 
 
     public static int getNuber() {
@@ -20,8 +20,8 @@ public class InputNumber {
 
                 }else{
 
-                    System.out.println("Your choics is iligal");
-                };
+                    System.out.println("Your choice is illegal");
+                }
 
             }catch(Exception e){
                 System.out.println("Not an integer");
