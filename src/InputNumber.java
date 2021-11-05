@@ -6,7 +6,7 @@ public class InputNumber {
 
     public static int getNuber() {
         Scanner sc = new Scanner(System.in);
-        String input = "a";
+        String input = "";
         boolean notAnInteger = true;
         while(notAnInteger){
             input = sc.next();
